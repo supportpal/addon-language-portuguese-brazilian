@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Addons\Languages\PortugueseBrazilian\Controllers;
+namespace Addons\Languages\PortugueseBrazil\Controllers;
 
 use App\Modules\Core\Controllers\Languages\Language;
 
-class PortugueseBrazilian extends Language
+class PortugueseBrazil extends Language
 {
     /**
      * Plugins can run an installation routine when they are activated. This will typically include adding default
