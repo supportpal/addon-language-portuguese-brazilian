@@ -415,4 +415,18 @@ return array(
     "more_information"          => "More Information",
     "details"                   => "Details",
 
+    /*
+     * 4.1.0
+     */
+    "merge"                     => "Merge",
+
+    /*
+     * 5.0.0
+     */
+    "invited"                   => "Invited",
+    "apply"                     => "Apply",
+    "opened"                    => "Opened",
+    "week"                      => "Week|Weeks",
+    "quarter"                   => "Quarter|Quarters",
+
 );

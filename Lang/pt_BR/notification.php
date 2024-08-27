@@ -8,9 +8,6 @@ return array(
     "new_reply"             => "Nova resposta a ticket",
     "new_reply_text"        => "Uma nova resposta foi enviada por :name no ticket #:item.",
 
-    "operator_login"        => "Operador logado",
-    "operator_login_text"   => ":name logou no painel do operador.",
-
     "failed_logins"         => "Logins falhos de operador",
     "new_comments"          => "Novos comentários",
 
@@ -23,5 +20,11 @@ return array(
      * 2.1.1
      */
     "private_message_text"  => ":name enviou uma nova <a href=':route'>mensagem privada</a>.",
+
+    /*
+     * 4.2.0
+     */
+    "new_mention"           => "New Mention",
+    "new_mention_text"      => ":name mentioned you in ticket #<a href=':route'>:number</a>.",
 
 );
