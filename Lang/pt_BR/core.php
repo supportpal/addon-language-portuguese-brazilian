@@ -90,7 +90,6 @@ return array(
     "smtp_username"             => "Nome do usuário SMTP",
     "smtp_password"             => "Senha do usuário SMTP",
     "ssl"                       => "SSL",
-    "tls"                       => "TLS",
     "email_content"             => "Conteúdo do e-mail",
     "email_content_desc"        => "Digite um assunto e conteúdo de email padrão para este template. Você também pode escrever em outros idiomas. Se o template não estiver em outro idioma, ele usará as configurações padrão.",
     "outgoing"                  => "Saída",
@@ -174,7 +173,6 @@ return array(
     "schedule_task_cron"        => "Cron Job",
     "schedule_task_3"           => "Crie um trabalho cron semelhante ao exemplo fornecido abaixo em seu servidor para que as tarefas agendadas sejam executadas automaticamente.",
     "ticket_channel_desc"       => "Canais de ticket são métodos para criar tickets. Eles podem ser facilmente estendidos para incluir seus próprios canais, por exemplo, ingressos abertos via Instagram.",
-    "ticket_channel_2"          => "Fornecemos uma série de canais padrão. Você pode querer ativar e configurar os canais do Facebook e Twitter para coletar bilhetes gerados através das mídias sociais.",
     "user_desc"                 => "Os usuários que interagem com seu sistema são exibidos aqui. Você pode adicionar, editar e excluir usuários, conforme apropriado.",
     "organisation_desc"         => "Os usuários podem ser atribuídos a organizações, permitindo o acesso a tickets abertos por outros usuários em sua organização.",
     "operator_desc"             => "Outros membros da equipe podem ser adicionados como operadores aqui, juntamente com o gerenciamento de quais departamentos eles estão designados.",
@@ -333,7 +331,6 @@ return array(
     "reprocess_email_desc"      => "Recomendamos revisar o que originalmente bloqueou o email e fazer as alterações necessárias antes de tentar reprocessar.",
     "email_blocked_desc"        => "O e-mail falhou ao enviar várias vezes, agora deve ser enviado manualmente.",
     "captcha_type"              => "Tipo de Captcha",
-    "captcha_type_desc"         => "Select the Captcha to be used throughout the system. We recommend switching to Google reCAPTCHA, which requires additional configuration.",
     "default_captcha"           => "Captcha padrão",
     "recaptcha_site_key"        => "Site Key",
     "recaptcha_secret_key"      => "Secret Key",
@@ -361,7 +358,7 @@ return array(
      */
     "enable_ssl_warning"        => "Se você habilitar essa configuração quando a página não carregar corretamente, você poderá ficar bloqueado no SupportPal!",
     "verify_frontend_loads"     => "Por favor, verifique se o frontend carrega corretamente abaixo.",
-    "twig_operator_signature"   => "O campo de mesclagem {{ operator.signature|raw }} será processado em tempo de execução; portanto, a visualização pode estar incorreta.",
+    "twig_operator_reply_template"   => "The {{ operator.reply_template|raw }} merge field will be processed at runtime hence the preview may be incorrect.",
 
     /*
      * 2.4.1
@@ -590,5 +587,99 @@ return array(
     "alternative_description"   => "Alternative description",
     "browse_image"              => "Browse for an image",
     "drop_image"                => "Drop an image here",
+
+    /*
+     * 4.2.0
+     */
+    "keyboard_shortcuts"        => "Keyboard Shortcuts",
+    "enable_keyboard_shortcuts" => "Enable keyboard shortcuts",
+    "shortcut_global"           => "Global shortcuts",
+    "shortcut_toggle"           => "Toggle the keyboard shortcuts dialog",
+    "shortcut_start_search"     => "Start search",
+    "shortcut_goto_new_ticket"  => "Go to the open new ticket page",
+    "shortcut_ticket_view"      => "Ticket view shortcuts",
+    "shortcut_focus_reply"      => "Focus the reply form",
+    "shortcut_focus_notes"      => "Focus the notes form",
+    "shortcut_focus_forward"    => "Focus the forward form",
+    "shortcut_toggle_user_tab"  => "Toggle the user details tab in the sidebar",
+    "shortcut_take_ticket"      => "Take ticket",
+    "shortcut_close_ticket"     => "Close ticket",
+    "shortcut_lock_ticket"      => "Close & lock ticket",
+    "shortcut_unlock_ticket"    => "Unlock ticket",
+    "shortcut_trash_ticket"     => "Move ticket to trash",
+    "shortcut_block_user"       => "Block user and move ticket to trash",
+    "shortcut_watch_ticket"     => "Watch ticket",
+    "shortcut_unwatch_ticket"   => "Unwatch ticket",
+    "shortcut_merge_ticket"     => "Merge ticket",
+    "shortcut_unmerge_ticket"   => "Unmerge ticket",
+    "shortcut_expand_all"       => "Expand all messages",
+    "shortcut_collapse_all"     => "Collapse all messages",
+    "shortcut_print_ticket"     => "Print ticket details and messages",
+
+    /*
+     * 4.3.0
+     */
+    "db_connection_error"       => "Database connection error, please check :path",
+
+    /*
+     * 5.0.0
+     */
+    "favicon_dark_mode"         => "Dark Mode Favicon",
+    "favicon_dark_mode_desc"    => "If your favicon was designed to only work on a light background, set a different favicon for dark mode. This will only be used if your browser and/or operating system is running in dark mode.",
+    "template_mode_system_desc" => "Choosing system will synchronise the template mode to light or dark mode depending on your operating system theme settings.",
+
+    /*
+     * 5.0.1
+     */
+    "starttls_or_none"          => "STARTTLS / None",
+
+    /*
+     * 5.1.0
+     */
+    "email_attempt_at_desc"     => "The email failed to send. Retrying again :time.", // :time example, "in 5 mins"
+    "websockets_connection"     => "Web Sockets Connection",
+    "websockets_not_running"    => "Unable to connect to web socket server.",
+    "search_driver_check"       => "Search Driver",
+    "search_driver_not_working" => "The configured search driver is not working correctly.",
+
+    /*
+     * 5.2.0
+     */
+    "temporary_path"            => "Temporary Path",
+    "temporary_path_desc"       => "The temporary path is used to store files during the update. The system temporary path is used by default. The path must have at least 3GB of free space.",
+    "background_jobs_desc"      => "Below are a list of background jobs that have failed recently.",
+    "failed_jobs"               => "Failed Jobs",
+    "horizon_dashboard"         => "Horizon Dashboard",
+    "job"                       => "Job|Jobs",
+    "job_payload"               => "Job Payload",
+    "job_exception"             => "Job Exception",
+    "failed_at"                 => "Failed At",
+    "queue"                     => "Queue",
+    "exception"                 => "Exception",
+    "data"                      => "Data",
+    "failed_background_jobs"    => "One or more <a target='_blank' href=':link'>background jobs</a> have failed and require manual attention.",
+
+    /*
+     * 5.3.0
+     */
+    "ticket_channel_2"          => "Fornecemos uma série de canais padrão. Você pode querer ativar e configurar os canais do Facebook e Twitter para coletar bilhetes gerados através das mídias sociais.",
+    "incoming_duplicate"        => "Incoming (Duplicate)",
+
+    /*
+     * 5.4.0
+     */
+    "email_method_overridden"   => "The email method has been overridden in the <a href=':link' target='_blank'>default brand settings</a>.",
+    "addon_not_found"           => "Add-on not found.",
+    "deactivating_addon"        => "Deactivating add-on...",
+    "addon_already_activated"   => "Add-on already activated.",
+    "addon_already_deactivated" => "Add-on already deactivated.",
+    "addon_cannot_deactivate"   => "Add-on cannot be deactivated.",
+    "addon_activation_failed"   => "Add-on activation failed, check the application log for more information.",
+    "addon_deactivation_failed" => "Add-on deactivation failed, check the application log for more information.",
+    "site_key"                  => "Site Key",
+    "secret_key"                => "Secret Key",
+    "turnstile_desc"            => "Please register a new Turnstile widget at <a target='_blank' href=\"https://developers.cloudflare.com/turnstile/get-started/\">Cloudflare</a>. Copy the site and secret key above.",
+    "hcaptcha_desc"             => "Please register at <a target='_blank' href=\"https://hcaptcha.com/\">hCaptcha</a>. Copy the site and secret key above.",
+    "captcha_type_desc"         => "Select the Captcha to be used throughout the system. We recommend switching to Google reCAPTCHA, which requires additional configuration.",
 
 );

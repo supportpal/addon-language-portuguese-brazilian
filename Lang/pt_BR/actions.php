@@ -26,11 +26,7 @@ return array(
     /*
      * 2.2.0
      */
-    "increase_due_time"         => "Aumentar prazo de entrega",
     "close_and_lock_ticket"     => "Fechar e bloquear ticket",
-    "pause_due_time"            => "Pausar prazo de entrega",
-    "reduce_due_time"           => "Reduzir prazo de entrega",
-    "set_due_time"              => "Definir prazo de entrega",
     "unlock_ticket"             => "Debloquear ticket",
     "update_sla_plan"           => "Atualizar plano SLA",
     "update_subject"            => "Atualizar assunto",
@@ -74,8 +70,17 @@ return array(
     "block_user"                => "Bloquear usuário",
 
     /*
-     * 2.6.0
+     * 5.0.0
      */
-    "clear_due_time"            => "Limpar prazo de entrega",
+    "increase_resolve_due_time" => "Increase resolution due time",
+    "increase_reply_due_time"   => "Increase reply due time",
+    "reduce_resolve_due_time"   => "Reduce resolution due time",
+    "reduce_reply_due_time"     => "Reduce reply due time",
+    "set_resolve_due_time"      => "Set resolution due time",
+    "set_reply_due_time"        => "Set reply due time",
+    "clear_resolve_due_time"    => "Clear resolution due time",
+    "clear_reply_due_time"      => "Clear reply due time",
+    "pause_due_times"           => "Pause due times",
+    "unpause_due_times"         => "Unpause due times",
 
 );

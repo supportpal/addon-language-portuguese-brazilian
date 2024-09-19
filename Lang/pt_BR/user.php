@@ -23,7 +23,6 @@ return array(
     "transfer_ownership_desc"       => "Como um atual proprietário da organização, você não pode ser removido como administrador e só você pode apagar a organização. Você pode transferir a propriedade da organização para otura pessoa, mas saiba que isto não pode ser revertido.",
     "transfer_ownership_operator"   => "Apenas o proprietário pode apagar a organização e não pode ser removido dela. Use esta opção para alterar a propriedade para outro usuário da organização.",
     "start_typing_name"             => "Comece a digitar um nome...",
-    "organisation_add_user"         => "Adicionar usuários à organização",
     "organisation_desc"             => "Each organisation can have <strong>managers</strong>, who can manage users and read and reply to other's tickets, and <strong>users</strong>, who can open tickets, but can't read or reply to other's tickets.",
     "organisation_operator_desc"    => "Adicione usuários existentes a esta organização clicando em \"Adicionar usuário\" e procurando pelo sue nome, observe que adicionar usuário irá remover qualquer link que ele tenha com outra organização.",
     "organisation_user_desc"        => "<strong>Administrador</strong> - Pode gerenciar outros usuários &amp; responder a tickets de outros usuários.<br /><strong>Usuários</strong> - Só podem abrir tickets em nome da organização e responder aos próprios tickets.",
@@ -56,9 +55,6 @@ return array(
     "country"                       => "País",
     "avatar"                        => "Avatar",
     "confirm_password"              => "Confirme a senha",
-
-    "confirmed"                     => "Confirmado",
-    "unconfirmed"                   => "Não confirmado",
 
     "group"                         => "Grupo de usuário|Grupos de usuário",
     "group_members"                 => "Membros do grupo",
@@ -137,7 +133,6 @@ return array(
     "two_fa_secret"                 => "Segredo 2FA",
     "two_fa_secret_desc"            => "Por favor, guarde isto num local seguro, pois irá precisar disto para readmitir a conta do autenticador no seu telefone, caso perca o acesso.",
     "display_notifications"         => "Exibir notificações",
-    "display_notifications_desc"    => "O sistema irá notificá-lo quando novos tickets ou respostas forem criados, ou quando outros operadores fizerem login. Você pode escolher entre notificações na área de trabalho ou notificações no navegador, ou desabilitá-lo completamente.",
     "desktop_notifications"         => "Notificações da área de trabalho",
     "browser_notifications"         => "Notificações do navegador",
 
@@ -204,11 +199,6 @@ return array(
     "op_settings_individual_dept"   => "Atribuído individualmente:",
     "op_settings_individual_dept_desc" => "Esses departamentos são adicionais a quaisquer departamentos aos quais o operador esteja atribuído por meio de seus grupos acima.",
     "also_registered_other_brand"   => "Este usuário também está registrado na marca :brands.| Este usuário também está registrado nas marcas :brands.",
-    "signature"                     => "Assinatura|Assinaturas",
-    "signature_desc"                => "Crie assinaturas de tickets pessoais, com a opção de personalizar com base na marca / departamento do tíquete. A assinatura padrão é usada quando uma assinatura de um departamento e / ou marca específica não pode ser encontrada.",
-    "operator_signature"            => "Assinatura do Operador|Assinaturas do Operador",
-    "ticket_signature_desc"         => "Defina a assinatura do ticket padrão da operadora.",
-    "operator_signature_desc"       => "Assinaturas adicionais para departamentos e/ou marcas específicas podem ser definidas na seção <a href=':route' target='_blank'>Assinaturas do operador</a>.",
     "view_organisation"             => "Ver Organização",
     "new_owner"                     => "Novo Proprietário",
     "operator_role"                 => "Função do operador|Funções do operador",
@@ -259,7 +249,6 @@ return array(
     "unlink_account"                => "Removido :record",
     "unlink_account_warning"        => "Remover uma rede social significa que você não irá mais poder usá-la para fazer login em sua conta.",
     "failed_login"                  => "Login falho|Logins falhos",
-    "resend_confirmation"           => "<strong><a href=':link'>Clique aqui</a></strong> para receber uma nova confirmação de email.",
 
     /*
      * 2.4.0
@@ -276,30 +265,15 @@ return array(
     /*
      * 2.5.0
      */
-    "organisation_domain_desc"      => "Informe cada domínio possuído pela organização. Usuários que registraerm um email pertecente a um destes domínios automaticamente serão adicionados à organização. Recomendamos verificar se o usuário é genuinamente parte da organização se eles não confirmarem o email de propriedade do endereço de email.",
-    "changing_email_desc"           => "Alterar o endereço de email vai requerer que você confirme a propriedade do novo email no próximo login.",
-    "unconfirmed_user_desc"         => "O usuário ainda não confirmou a propriedade deste email.",
-    "unregistered_user_desc"        => "Esta conta foi criada automaticamente sem senha. Você pode enviar uma confirmação de email para permitir a criação de uma conta própria ou configurar uma senha abaixo.",
-    "send_confirmation_email"       => "Enviar confirmação de email",
-    "mark_as_confirmed"             => "Marcar como confirmado",
-    "password_reset_already"        => "Você já confirmou a propriedade do seu endereço de email, você pode ir para o login",
-    "unconfirmed_account"           => "Por favor, verifique o seu email para confirmar a propriedade de seu endereço de email.",
     "success_register_desc"         => "Obrigado por registrar uma conta. Por favor, verifique o seu email para completar a configuração da sua conta.",
-    "resend_confirmation_sent"      => "Um novo e-mail de confirmação foi enviado e deve chegar em alguns minutos.",
-    "register_confirm_desc"         => "Obrigado por confirmar a propriedade do seu endereço de email, por favor, informe uma senha abaixo para continuar com a configuração da sua conta.",
-    "thank_you_confirm"             => "Obrigado por confirmar a propriedade do seu endereço de email.",
     "use_gravatar"                  => "Usar Gravatar",
     "use_gravatar_desc"             => "Gravatar é um serviço que oferece avatares reconhecidos globalmente para seus usuários registrados. O nosso sistema irá automaticamente enviar uma solicitação para secure.gravatar.com com um hash MD5 de cada email de usuário para mostrar um avatar. O hash MD5 pode estar publicamente visível no HTML do frontend. Recomedamos que atualize a sua política de privacidade se for usar este recurso.",
 
     /*
      * 2.6.0
      */
-    "updating_email_address"        => "Para completar a atualizaçaõ do seu endereço de email, por favor, clique no link enviado para :email para confirmar a propriedade do novo endereço.",
-    "confirmation"                  => "Confirmação",
-    "confirmation_email_in_use"     => "O email informado já está em uso por outra conta.",
     "continue_to_login"             => "Por favor, continue para o<a href=':route'>login</a>.",
     "reset_request_desc"            => "Se uma conta correspondente for encontrada, um email será enviado em breve para permitir que você recupere a sua senha.",
-    "password_reset_error"          => "O link pode ter expirado. Se seu link não funcionar por algum motivo, solicite um novo.",
 
     /*
      * 3.0.0
@@ -339,7 +313,7 @@ return array(
     "logged_in"                     => "Logged In",
     "revoke_session_desc"           => "Revoking a session will log the device out of the operator panel. It will also revoke all remember me tokens for other devices.",
 
-    /**
+    /*
      * 4.0.0
      */
     "verify_phone_number"           => "Verify Phone Number",
@@ -348,5 +322,68 @@ return array(
     "verify_phone_code_send_error"  => "An error occurred while sending the verification code. Please try again later.",
     "verify_phone_code_error"       => "Code could not be verified.",
     "logged_in_as"                  => "Logged in as :name",
+
+    /*
+     * 4.1.0
+     */
+    "merge_users"                   => "Merge Users",
+    "merge_user_into"               => "Select user to merge into",
+    "merge_organisations"           => "Merge Organisations",
+    "merge_organisation_into"       => "Select organisation to merge into",
+    "search_for_organisation"       => "Search for organisation...",
+
+    /*
+     * 4.2.0
+     */
+    "reply_template"                => "Reply Template|Reply Templates",
+    "reply_template_desc"           => "Set a personal reply template that prefills the textarea when starting to compose a reply, with the option to customise based on the brand/department of the ticket. The default reply template is used when a reply template for a specific department and/or brand cannot be found.",
+    "operator_reply_template"       => "Operator Reply Template|Operator Reply Templates",
+    "ticket_reply_template_desc"    => "Set the operator's default ticket reply template.",
+    "operator_reply_template_desc"  => "Further reply templates for specific departments and/or brands can be set in the <a href=':route' target='_blank'>Operator Reply Templates</a> section.",
+
+    /*
+     * 5.0.0
+     */
+    "verified"                      => "Verified",
+    "unverified"                    => "Unverified",
+    "unverified_email_desc"         => "User has not verified ownership of this email address.",
+    "unverified_account"            => "Please check your email to verify ownership of this email address.",
+    "changing_email_desc"           => "Alterar o endereço de email vai requerer que você confirme a propriedade do novo email no próximo login.",
+    "unregistered_user_desc"        => "Esta conta foi criada automaticamente sem senha. Você pode enviar uma confirmação de email para permitir a criação de uma conta própria ou configurar uma senha abaixo.",
+    "send_verification_email"       => "Send Verification Email",
+    "mark_as_verified"              => "Mark as Verified",
+    "password_reset_already"        => "Você já confirmou a propriedade do seu endereço de email, você pode ir para o login",
+    "verification_email_resent"     => "A new verification email has been sent and should arrive in a few minutes.",
+    "verified_set_password_desc"    => "Thank you for verifying ownership of your email, please enter a password below to finish your account set up.",
+    "thank_you_for_verifying_email" => "Thank you for verifying ownership of your email address.",
+    "organisation_domain_desc"      => "Informe cada domínio possuído pela organização. Usuários que registraerm um email pertecente a um destes domínios automaticamente serão adicionados à organização. Recomendamos verificar se o usuário é genuinamente parte da organização se eles não confirmarem o email de propriedade do endereço de email.",
+    "resend_verification_email"     => "Resend Verification Email",
+    "updating_email_address"        => "Para completar a atualizaçaõ do seu endereço de email, por favor, clique no link enviado para :email para confirmar a propriedade do novo endereço.",
+    "email_verification"            => "Email Verification",
+    "email_verification_already_in_use" => "The email address is already in use by another account.",
+    "verification_link_expired"     => "The verification link may have expired. If your link isn't working for any reason, please request a new one.",
+    "user_invited_to_organisation"  => "The user has been invited to the organisation by email, they must click the link and set up a password to complete their account setup.",
+    "invite_user"                   => "Invite User",
+    "organisation_invite_user"      => "Invite user to organisation",
+    "user_already_in_organisation"  => "The user is already part of an organisation.",
+    "invitations"                   => "Invitation|Invitations",
+    "invite_exists"                 => "The user has already been invited.",
+    "success_join"                  => "You are now a member of the organisation :name.",
+    "error_join"                    => "The invitation code could not be found, or has expired.",
+    "verify_to_view_tickets"        => "Please verify all additional email addresses or remove unverified email addresses under your account profile.",
+
+    /*
+     * 5.2.3
+     */
+    "display_notifications_desc"    => "O sistema irá notificá-lo quando novos tickets ou respostas forem criados, ou quando outros operadores fizerem login. Você pode escolher entre notificações na área de trabalho ou notificações no navegador, ou desabilitá-lo completamente.",
+
+    /*
+     * 5.3.0
+     */
+    "email_verified"                => "Email Verified",
+    "registered_desc"               => "If the user has a password set and is able to login to the frontend.",
+    "new_operator_account_desc"     => "You can send a verification email to let the operator set up their own account or toggle to set a password for them below.",
+    "operator_set_password_desc"    => "Please enter a password below to finish setting up your operator account.",
+    "password_set_success"          => "Password set successfully!",
 
 );
