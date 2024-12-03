@@ -168,4 +168,9 @@ return array(
     "lock_timeout"          => "Lock Timeout",
     "lock_timeout_desc"     => "The server is currently busy processing other requests. Please try again.",
 
+    /*
+     * 5.4.1
+     */
+    "throttle_error"        => "Too many attempts, please try again :in_time." // :in_time becomes in 1 minute, etc
+
 );
