@@ -45,8 +45,6 @@ return array(
     "twilio_api_details_desc"          => "Search for 'API Keys' in the console. Create an API key, and enter the key and secret below.",
     "twilio_api_secret"                => "API Secret",
     "twilio_number_verification"       => "Number Verification",
-    "twilio_number_verification_desc"  => "Optional - Enter a verification service SID to enable verification of user phone numbers. This is recommended to avoid a user entering any phone number - the <a target='_blank' href='https://www.twilio.com/verify'>Verify</a> service by Twilio is chargeable.",
-    "twilio_verify_sid"                => "Verification SID",
 
     "twitter_api_key_secret"           => "API Key Secret",
 
@@ -55,5 +53,22 @@ return array(
      */
     "twitter_documentation"            => "Please read over our documentation for setting up <a href=':link'>X</a>.",
     "twitter_redirect_url"             => "The following URL <strong>must</strong> be entered for the X App 'Callback URL':",
+
+    /*
+     * 5.4.1
+     */
+    "twilio_verify_sid"                => "Verification SID",
+    "twilio_number_verification_desc"  => "Optional - Enter a verification service SID to enable verification of user phone numbers. This is recommended to avoid a user entering any phone number - the <a target='_blank' href='https://www.twilio.com/verify'>Verify</a> service by Twilio is chargeable.",
+    "twilio_verify_countries"          => "Verify Allowed Countries",
+    "twilio_verify_countries_desc"     => "Restrict phone number verification to specific countries, to reduce costs and the risk of abuse. Phone numbers belonging to countries outside of the permitted list can be manually marked as verified by staff.",
+
+    /*
+     * 5.5.0
+     */
+    "algolia_frontend_search_rate_limit" => "Frontend Search Rate Limiting",
+    "algolia_max_daily"                => "Daily Max Requests",
+    "algolia_max_daily_desc"           => "The maximum number of API calls that can be made to Algolia from the frontend.",
+    "algolia_max_min"                  => "Max Requests Per Minute",
+    "algolia_max_min_desc"             => "The maximum number of API calls that can be made to Algolia from the frontend, per authenticated user / IP address.",
 
 );

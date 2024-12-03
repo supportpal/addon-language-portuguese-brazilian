@@ -538,8 +538,6 @@ return array(
     "append_ip_address_api_desc" => "Append the user's IP address to the end of their ticket messages (requires user_ip_address data to be provided).",
     "check_spam"                => "Check Spam Rules",
     "check_spam_api_desc"       => "Block messages which match spam rules.",
-    "enable_throttling"         => "Enable Throttling",
-    "enable_throttling_api_desc" => "Limit the number of messages user's can post within a time frame. See <a href='https://docs.supportpal.com/current/App+Configuration#Throttling' target='_blank'>Throttling configuration</a> for more details on how to adjust the limits.",
     "captcha_desc"              => "Quando o captcha deve ser mostrado aos usuários que abrem novos tickets.",
 
     /*
@@ -572,5 +570,22 @@ return array(
     "reject_duplicate_emails"   => "Reject Duplicate Emails",
     "reject_duplicate_emails_desc" => "Stop emails being imported more than once, detected based on the Message-ID header.",
     "duplicate_email_detected"  => "Duplicate email that has already been imported.",
+
+    /*
+     * 5.5.0
+     */
+    "rate_limiting"             => "Rate Limiting",
+    "max_requests"              => "Max Requests",
+    "max_requests_desc"         => "Set the maximum number of requests before a user is throttled.",
+    "decay_time"                => "Decay Time",
+    "decay_time_desc"           => "The number of minutes until the available attempts are reset.",
+    "exclude_addresses"         => "Exclude Addresses",
+    "exclude_addresses_desc"    => "A list of email addresses which are excluded from rate limits.",
+    "enable_throttling"         => "Enable Throttling",
+    "enable_throttling_api_desc" => "Limit the number of messages user's can post within a time frame. See <a href='https://docs.supportpal.com/current/App+Configuration#Throttling' target='_blank'>Throttling configuration</a> for more details on how to adjust the limits.",
+    "close_without_notify"      => "Close (without notification)",
+    "lock"                      => "Lock",
+    "pin"                       => "Pin",
+    "unpin"                     => "Unpin",
 
 );
